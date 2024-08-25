@@ -1,0 +1,57 @@
+/* Write your CSS here */
+.bg-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 100%;
+  height: 100vh;
+}
+.darkCard-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #000000;
+  width: 450px;
+  height: 220px;
+  border-radius: 10px;
+}
+.darkHeadingEl {
+  color: #ffff;
+  font-family: 'Roboto';
+  font-size: 30px;
+}
+.lightMode-btn {
+  background-color: #ffff;
+  color: #000000;
+  border-radius: 8px;
+  font-size: 25px;
+  width: 180px;
+  height: 60px;
+}
+.lightCard-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #ffff;
+  width: 450px;
+  height: 220px;
+  border-radius: 10px;
+  border: 2px solid #000000;
+}
+.lightHeadingEl {
+  color: #000000;
+  font-family: 'Roboto';
+  font-size: 30px;
+}
+.darkMode-btn {
+  background-color: #ffff;
+  color: #000000;
+  border-radius: 8px;
+  font-size: 25px;
+  width: 180px;
+  height: 60px;
+}
