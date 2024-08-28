@@ -7,10 +7,14 @@ class LightDarkMode extends Component {
 
   implimentLightMode = () => {
     const {isLogIn} = this.state
-    this.setState(prevState => {
-      isLogIn = !prevState.isLogIn
-    })
+    this.setState(prevState => ({
+      isLogIn: !prevState.isLogIn
+    }))
     console.log(isLogIn)
+  }
+
+  implimentDarkMode = ()=>{
+    this.setState (prevState =>({isLogIn :!prevState.isLogIn}))
   }
 
   render() {
@@ -30,7 +34,7 @@ class LightDarkMode extends Component {
       chooseMode = (
         <div className="lightCard-container">
           <h1 className="lightHeadingEl">Click To Change Mode</h1>
-          <button className="darkMode-btn">Dark Mode</button>
+          <button className="darkMode-btn" onClick = {this.implimentDarkMode}>Dark Mode</button>
         </div>
       )
     }
